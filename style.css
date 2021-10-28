@@ -37,6 +37,8 @@ form input:focus {
 form input {
   border-top-left-radius: 1rem;
   border-bottom-left-radius: 1rem;
+  width: 40%;
+  min-width: 200px;
 }
 form button {
   color: #d88771;
@@ -50,11 +52,7 @@ form button:hover {
   background: #dca268;
   color: white;
 }
-.todo-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 .todo-list {
   min-width: 30%;
   list-style: none;
