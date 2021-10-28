@@ -28,6 +28,9 @@ form button {
   border: none;
   background: white;
 }
+.todo-input {
+  padding-left: 1rem;
+}
 form input:focus {
   outline: none;
 }
@@ -55,6 +58,10 @@ form button:hover {
 .todo-list {
   min-width: 30%;
   list-style: none;
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
 }
 .todo {
   margin: 0.5rem;
@@ -64,7 +71,7 @@ form button:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
+  width: 80%;
 }
 .todo li {
   flex: 1;
