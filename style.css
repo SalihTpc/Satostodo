@@ -37,7 +37,7 @@ form input:focus {
 form input {
   border-top-left-radius: 1rem;
   border-bottom-left-radius: 1rem;
-  width: 60%;
+  width: 80%;
   min-width: 200px;
 }
 form button {
@@ -118,6 +118,7 @@ select {
   margin: 1rem 1rem 1rem 0.2rem;
   position: relative;
   overflow: hidden;
+  width: max-content;
 }
 .select::after {
   content: "\25BC";
@@ -125,7 +126,7 @@ select {
   background-color: #ff6f47;
   top: -0px;
   right: 0;
-  padding: 0.9rem;
+  padding: 0.95rem;
   pointer-events: none;
   border-top-right-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
@@ -141,6 +142,6 @@ select {
     margin-bottom: 2rem;
   }
   .upper {
-    width: 80%;
+    width: 100%;
   }
 }
