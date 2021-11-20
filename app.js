@@ -8,9 +8,9 @@ todoButton.addEventListener("click", addTodo);
 todoList.addEventListener("click", clickCheck);
 // filterOptions.addEventListener("click", filterTodo);
 filterOptions.addEventListener("change", (e) => {
-  console.log(e.target.value);
+  // console.log(e.target.value);
   const todos = todoList.childNodes;
-  console.log(todos);
+  // console.log(todos);
   todos.forEach(function (todo) {
     switch (e.target.value) {
       case "all":
