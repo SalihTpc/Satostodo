@@ -37,7 +37,7 @@ form input:focus {
 form input {
   border-top-left-radius: 1rem;
   border-bottom-left-radius: 1rem;
-  width: 40%;
+  width: 60%;
   min-width: 200px;
 }
 form button {
@@ -52,7 +52,11 @@ form button:hover {
   background: #dca268;
   color: white;
 }
-
+.upper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .todo-list {
   min-width: 30%;
   list-style: none;
@@ -93,4 +97,50 @@ i {
 .completed {
   text-decoration: line-through;
   opacity: 0.5;
+  transition: all 0.4s ease;
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border: none;
+  color: #ff6f47;
+  font-size: large;
+  font-weight: 500;
+  width: 10rem;
+  cursor: pointer;
+  padding: 1rem 1rem 1rem 0.2rem;
+  border-radius: 0.5rem;
+  background: white;
+}
+.select {
+  margin: 1rem 1rem 1rem 0.2rem;
+  position: relative;
+  overflow: hidden;
+}
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  background-color: #ff6f47;
+  top: -0px;
+  right: 0;
+  padding: 0.9rem;
+  pointer-events: none;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  transition: all 0.3s ease;
+}
+.select:hover::after {
+  background: #fff;
+  color: #ff6f47;
+}
+@media only screen and (max-width: 600px) {
+  form {
+    flex-direction: column-reverse;
+    margin-bottom: 2rem;
+  }
+  .upper {
+    width: 80%;
+  }
 }
