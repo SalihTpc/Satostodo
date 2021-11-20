@@ -44,6 +44,8 @@ form button {
   color: #d88771;
   background: white;
   cursor: pointer;
+  position: relative;
+  left: -5px;
   transition: all 0.3s ease;
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
